@@ -28,7 +28,8 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=-1
+current_page=0
+FILE_NAME_0=1868;C#;0;EUTF-8;1;1;0;C%3A%5CUsers%5CUsuario%5CDesktop%5C1-DAM%5CProgramacion%5CC%23%5CEjercicios%5CTema_3%5C3.2.1.cs;0;4
 
 [build-menu]
 EX_00_LB=_Ejecutar

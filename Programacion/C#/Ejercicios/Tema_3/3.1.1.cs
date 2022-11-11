@@ -3,7 +3,7 @@
 // Ruben Martinez Martinez
 
 using System;
-class ej{
+class Ejercicio_3_1_{
 	static void Main(){
 		uint num = 1000000;
 		ulong producto;

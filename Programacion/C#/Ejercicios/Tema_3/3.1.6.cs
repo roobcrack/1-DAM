@@ -4,12 +4,16 @@
 // Ruben Martinez Martinez
 
 using System;
-class ej{
+class Ejercicio_3_1_6{
 	static void Main(){
-		int n1, res;
+		int n1=0, res;
 		
-		Console.Write("Introduzca un numero del 0 al 255: ");
-		n1 = Convert.ToInt32(Console.ReadLine());
+		while(n1==0){
+			try{
+				Console.Write("Introduzca un numero del 0 al 255: ");
+				n1 = Convert.ToInt32(Console.ReadLine());
+			}catch(Exception e){Console.WriteLine(e.Message+"\n");}
+		}
 		
 		res = n1 ^ 5;
 		
