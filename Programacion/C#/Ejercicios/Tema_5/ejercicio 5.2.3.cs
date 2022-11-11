@@ -14,26 +14,35 @@ class Ejercicio_5_2_3{
 		typeFile [] files = new typeFile[1000];
 		int numberFiles=0;
 		string [] options = {"Add data to a new file", "Show all file names", "Show files over entered size", "See data from a file", "Quit the program"};
-		int option, max=0, timesSpace;
-		
+		int option=0, max=0, timesSpace;
+		bool done=false;
 		do{
 			for(int i=0;i<options.Length;i++){
 				if(options[i].Length>max){
 					max=options[i].Length;
 				}
 			}
+			
 			Console.WriteLine("Choose an option");
 			for(int i=0;i<max+8;i++){Console.Write("=");}
 			Console.WriteLine();
+			
 			for(int i=0;i<options.Length;i++){
 				timesSpace = max - options[i].Length;
 				string space = new string(' ', timesSpace);
 				Console.WriteLine("||{0}.- {1}{2}||",i+1,options[i],space);
 			}
+			
 			for(int i=0;i<max+8;i++){Console.Write("=");}
 			Console.WriteLine();
-			Console.Write("Insert: ");
-			option = Convert.ToInt32(Console.ReadLine());
+			done=false;
+			while(!done){
+				try{
+					Console.Write("Insert: ");
+					option = Convert.ToInt32(Console.ReadLine());
+					if((option<5)&&(option>0)){done=true;}
+				}catch(Exception e){Console.WriteLine(e.Message+"\n");}
+			}
 			
 			switch(option){
 				case 1: numberFiles = AddDataNewFile(files, numberFiles); break;

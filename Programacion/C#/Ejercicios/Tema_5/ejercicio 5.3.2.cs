@@ -4,13 +4,31 @@ para probarla.*/
 using System;
 class Ejercicio_5_3_2{	
 	static void Main(){
-		int squareLong, squareTall;
+		int squareLong=0, squareTall=0;
 		bool done=false;
 		
-		Console.Write("Enter how long you want the square to be.\nInsert: ");
-		squareLong = Convert.ToInt32(Console.ReadLine());
-		Console.Write("Enter how tall you want the square to be.\nInsert: ");
-		squareTall = Convert.ToInt32(Console.ReadLine());
+		while(!done){
+			try{
+				Console.Write("Enter how long you want the square to be.\nInsert: ");
+				squareLong = Convert.ToInt32(Console.ReadLine());
+				if(squareLong==0){
+					Console.WriteLine("ERROR.Long can't be 0.\n");
+				}else{done=true;}
+			}catch(Exception e){Console.WriteLine(e.Message+"\n");}
+		}
+		
+		done=false;
+		Console.WriteLine();
+		
+		while(!done){
+			try{
+				Console.Write("Enter how tall you want the square to be.\nInsert: ");
+				squareTall = Convert.ToInt32(Console.ReadLine());
+				if(squareTall==0){
+					Console.WriteLine("ERROR.Tall can't be 0.\n");
+				}else{done=true;}
+			}catch(Exception e){Console.WriteLine(e.Message+"\n");}
+		}
 		
 		DrawSquare(squareLong, squareTall);
 	}
