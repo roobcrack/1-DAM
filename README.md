@@ -1,2 +1,2 @@
-# 1-DAM
+# 1DAM
 Mi curso de 1º de DAM
