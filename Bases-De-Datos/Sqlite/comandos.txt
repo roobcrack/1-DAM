@@ -1,0 +1,7 @@
+.open tienda
+.tables
+select * from productos
+.headers on
+.mode column
+.nullvalue NULL
+.shell cls
