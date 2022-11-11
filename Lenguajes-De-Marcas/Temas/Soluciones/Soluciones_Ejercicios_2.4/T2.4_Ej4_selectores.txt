@@ -1,0 +1,21 @@
+Indica qué selector utilizarías para definir un estilo para cada uno de estos casos:
+
+Todos los elementos de una página
+
+	body
+
+Todos los párrafos de una página
+
+	p
+
+Un encabezado de nivel 2 con id “especial”
+
+	h2#especial
+
+Todas las negritas de clase “clase1”
+
+	strong.clase1
+
+Todos las cursivas contenidas en encabezados de nivel 2
+
+	h2 em

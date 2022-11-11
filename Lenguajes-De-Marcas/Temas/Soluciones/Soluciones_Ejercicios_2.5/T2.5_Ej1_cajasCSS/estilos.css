@@ -1,0 +1,9 @@
+.caja
+{
+    margin: 30px 20% 0 20%;
+    padding: 0 10px;
+    border-top: solid 4px red;
+    border-right: solid 6px blue;
+    border-bottom: solid 2px green;
+    background-color: gold;
+}

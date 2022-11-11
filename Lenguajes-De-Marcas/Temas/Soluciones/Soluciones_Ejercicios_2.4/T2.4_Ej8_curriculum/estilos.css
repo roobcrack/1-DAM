@@ -1,0 +1,33 @@
+body
+{
+    font-family: 'Gluten', cursive;
+    background-color: #B6EEF0;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+h1
+{
+    font-family: Arial;
+    font-size: 24pt;
+    color: #0728F6;
+}
+
+h2
+{
+    font-family: Arial;
+    font-size: 20pt;
+    color: #455CED;
+}
+
+h3
+{
+    font-family: Arial;
+    font-size: 16pt;
+    color: #6272D6;
+}
+
+strong
+{
+    color: #455CED;
+}

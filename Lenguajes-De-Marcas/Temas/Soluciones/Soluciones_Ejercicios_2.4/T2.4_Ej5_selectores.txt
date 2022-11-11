@@ -1,0 +1,44 @@
+Dados los siguientes selectores:
+
+p { ... }
+p.miClase { ... }
+p .miClase { ... }
+p, #miID { ... }
+p span em { ... }
+.miClase .miClase2 { ... } 
+
+Indica a qué textos del siguiente fragmento HTML se aplicarían:
+
+1. <p>blablablabla <span>blablablabla</span> blablablabla</p>
+2. <p class="miClase">blabla <span>blablabla<em>blabla</em></span> </p>
+3. <h1 class="miID">blablablabla <span class="miClase">aaaa</span> </h1>
+4. <p>blablablabla <span class="miClase">blablabla</span> blabla</p>
+5. <p class="miClase">blabla <span class="miClase2">blabla</span> </p>
+
+p { ... }
+
+	A todos los párrafos (1, 2, 4 y 5)
+
+p.miClase { ... }
+
+	A todos los párrafos de clase "miClase" (2 y 5)
+
+p .miClase { ... }
+
+	A todos los párrafos que contengan algo
+	de clase "miClase" (4)
+
+p, #miID { ... }
+
+	A todos los párrafos o a lo que tenga id="miID"
+	(1, 2, 4 y 5) - El 3 no porque es class, no id.
+
+p span em { ... }
+
+	A todas las cursivas contenidas en span, contenidos
+	a su vez en párrafos (cursiva de línea 2)
+
+miClase .miClase2 { ... } 
+
+	A todos los elementos de clase "miClase2" contenidos
+	en elementos de clase "miClase" (span de línea 5)
